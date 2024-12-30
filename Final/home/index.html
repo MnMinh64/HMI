@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo"> 
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="leaderboards.html">Leaderboards</a></li>
+            <li><a href="lineup.html">Line-up</a></li>
+            <li><a href="more.html">More</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#profile" class="active-section"><img src="image/profile_icon.png" alt="Profile Icon"> Profile</a></li>
+                <li><a href="#message"><img src="image/message.svg" alt="Message Icon"> Message</a></li>
+                <li><a href="#stat"><img src="image/stat.png" alt="Stat Icon"> Stat</a></li>
+                <li><a href="#friends" id="friends-link"><img src="image/add_friend.png" alt="Friends Icon"> Friends</a></li>
+            </ul>
+        </div>
+        <div class="player-info">
+            <div class="profile-header">
+                <img src="image/profile_avt.webp" alt="Profile Picture" class="profile-picture">
+                <input type="text" class="player-name" value="MinBuWin#2812" readonly>
+            </div>
+            <div class="stats-overview">
+                <div class="stat-box">
+                    <p>Current Rank</p>
+                    <img src="image/rank_icon.webp" alt="Rank Icon" class="rank-icon">
+                </div>
+                <div class="stat-box">
+                    <p>Rank Time</p>
+                    <div class="rank-time-graph">
+                        <div class="bar" style="height: 80%;"></div>
+                        <div class="bar" style="height: 60%;"></div>
+                        <div class="bar" style="height: 90%;"></div>
+                        <div class="bar" style="height: 70%;"></div>
+                        <div class="bar" style="height: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-details">
+                <div class="stat-detail-box">
+                    <p>Games Played</p>
+                    <p class="stat-value">100</p>
+                </div>
+                <div class="stat-detail-box">
+                    <p>Win Rate</p>
+                    <p class="stat-value">69%</p>
+                </div>
+                <div class="stat-detail-box">
+                    <p>Recent Matches</p>
+                    <p class="stat-value">3L 2W</p>
+                </div>
+            </div>
+            <div class="detailed-stats">
+                <h2>Detailed Stats</h2>
+                <div class="detailed-stats-grid">
+                    <div class="detailed-stat-item">
+                        <p>K/D Ratio</p>
+                        <p class="stat-value">2.5</p>
+                    </div>
+                    <div class="detailed-stat-item">
+                        <p>Headshot %</p>
+                        <p class="stat-value">45%</p>
+                    </div>
+                    <div class="detailed-stat-item">
+                        <p>Accuracy</p>
+                        <p class="stat-value">60%</p>
+                    </div>
+                    <div class="detailed-stat-item">
+                        <p>Most Played Agent</p>
+                        <p class="stat-value">Jett</p>
+                    </div>
+                    <div class="detailed-stat-item">
+                        <p>Average Score</p>
+                        <p class="stat-value">250</p>
+                    </div>
+                    <div class="detailed-stat-item">
+                        <p>Best Map</p>
+                        <p class="stat-value">Haven</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="match-history">
+                <h2>Match History</h2>
+                <table class="match-history-table">
+                    <thead>
+                        <tr>
+                            <th>Result</th>
+                            <th>Map</th>
+                            <th>Agent</th>
+                            <th>Score</th>
+                            <th>K/D/A</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="win">
+                            <td>Victory</td>
+                            <td>Ascent</td>
+                            <td><img src="image/jett.jpg" alt="Jett" class="agent-icon">Jett</td>
+                            <td>13-7</td>
+                            <td>25/10/5</td>
+                            <td>2023-11-15</td>
+                        </tr>
+                        <tr class="loss">
+                            <td>Defeat</td>
+                            <td>Bind</td>
+                            <td><img src="image/clove.jpg" alt="Clove" class="agent-icon">Omen</td>
+                            <td>8-13</td>
+                            <td>15/18/8</td>
+                            <td>2023-11-14</td>
+                        </tr>
+                        <tr class="win">
+                            <td>Victory</td>
+                            <td>Split</td>
+                            <td><img src="image/yoru.jpg" alt="Yoru" class="agent-icon">Sova</td>
+                            <td>13-10</td>
+                            <td>18/12/10</td>
+                            <td>2023-11-13</td>
+                        </tr>
+                        <tr class="loss">
+                            <td>Defeat</td>
+                            <td>Haven</td>
+                            <td><img src="image/cypher.jpg" alt="Cypher" class="agent-icon">Cypher</td>
+                            <td>5-13</td>
+                            <td>9/15/3</td>
+                            <td>2023-11-12</td>
+                        </tr>
+                        <tr class="win">
+                            <td>Victory</td>
+                            <td>Icebox</td>
+                            <td><img src="image/fade.jpg" alt="Fade" class="agent-icon">Reyna</td>
+                            <td>14-12</td>
+                            <td>28/16/2</td>
+                            <td>2023-11-11</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="friends-section" style="display: none;">
+                <div class="friend-list">
+                    <h2>Friend List</h2>
+                    <ul class="friend-list-ul">
+                        <li>
+                            <span class="friend-status online"></span>
+                            <span class="friend-name">Thảo</span>
+                            <span class="friend-id">#2345</span>
+                            <span class="friend-region">Same Region</span>
+                        </li>
+                        <li>
+                            <span class="friend-status online"></span>
+                            <span class="friend-name">Minh</span>
+                            <span class="friend-id">#2812</span>
+                            <span class="friend-region">Same Region</span>
+                        </li>
+                        <li>
+                            <span class="friend-status offline"></span>
+                            <span class="friend-name">Linh</span>
+                            <span class="friend-id">#1111</span>
+                            <span class="friend-region">Same Region</span>
+                        </li>
+                        <li>
+                            <span class="friend-status offline"></span>
+                            <span class="friend-name">Trang</span>
+                            <span class="friend-id">#1234</span>
+                            <span class="friend-region">Same Region</span>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="add-friend">
+                    <h2>Add Friend</h2>
+                    <div class="search-box">
+                        <input type="text" placeholder="Look your GameID" class="search-input">
+                        <button class="search-button">
+                        </button>
+                    </div>
+                    <div class="search-results">
+                        <p>Search Results:</p>
+                        <ul class="search-results-ul">
+                            <li>
+                                <span class="friend-name">Minh</span>
+                                <span class="friend-id">#2322</span>
+                                <button class="add-friend-button">Add to friendlist</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

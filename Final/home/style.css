@@ -1,0 +1,331 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("image/background.jpg"); /* Thay "background.jpg" bằng đường dẫn ảnh của bạn */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+}
+
+.header {
+    background-color: #650990;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+.logo img{
+    height: 50px;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar li a.active{
+    font-weight: bold;
+    border-bottom: 3px solid white;
+    padding-bottom: 15px;
+}
+
+.main-content {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    background-color: #eee;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.sidebar li a img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.sidebar li a.active-section {
+    background-color: #ddd;
+}
+
+.player-info {
+    background-color: #faefeff0;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.player-name {
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+}
+
+.stats-overview {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.rank-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.rank-time-graph {
+    display: flex;
+    align-items: flex-end;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.bar {
+    width: 15px;
+    margin-right: 5px;
+    background-color: #5f6964df;
+}
+
+.stats-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat-detail-box {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ... Phần CSS trước đó ... */
+
+.detailed-stats {
+    margin-top: 30px;
+}
+
+.detailed-stats h2 {
+    margin-bottom: 10px;
+}
+
+.detailed-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.detailed-stat-item {
+    background-color: #fce7e7;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.match-history {
+    margin-top: 30px;
+}
+
+.match-history h2 {
+    margin-bottom: 10px;
+}
+
+.match-history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.match-history-table th,
+.match-history-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.match-history-table th {
+    background-color: #f0f0f0;
+}
+
+.match-history-table .win {
+    background-color: #e6ffe6;
+}
+
+.match-history-table .loss {
+    background-color: #ffe6e6;
+}
+
+.agent-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* ... Phần CSS trước đó ... */
+
+.friends-section {
+    margin-top: 30px;
+}
+
+.friend-list {
+    margin-bottom: 20px;
+}
+
+.friend-list h2 {
+    margin-bottom: 10px;
+}
+
+.friend-list-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.friend-list-ul li {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.friend-status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.online {
+    background-color: green;
+}
+
+.offline {
+    background-color: gray;
+}
+
+.friend-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.friend-id {
+    color: #666;
+    margin-right: 10px;
+}
+
+.friend-region{
+    margin-left: auto;
+}
+
+.add-friend h2 {
+    margin-bottom: 10px;
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-results {
+    margin-bottom: 20px;
+}
+
+.search-results-ul {
+    list-style: none;
+    padding: 0;
+}
+.search-results-ul li{
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.search-results-ul li .friend-name{
+    margin-right: auto;
+}
+
+.add-friend-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
