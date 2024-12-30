@@ -1,0 +1,1 @@
+This website showcases the projects and assignments I completed during my Human-Machine Interaction (HMI) course. It demonstrates my understanding of key HMI concepts, including user-centered design, usability principles, and interaction design
